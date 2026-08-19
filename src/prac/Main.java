@@ -8,6 +8,10 @@ public class Main{
 			return true;
 		};
 		Task t1 = new Task();
+		Task t2 = new Task("Work","High");
+		Task t3 = new Task(null , "low");
 		System.out.println(task.isValid(t1));
+		System.out.println(task.isValid(t3));
+		System.out.println(task.isValid(t2));	
 	}
 }
