@@ -21,5 +21,8 @@ public class Main{
 		List<Task> result = tasksList.stream().filter(task::isValid).toList();
 		System.out.println(result.size());
 		result.forEach(t->System.out.println(t.getTitle()));
+		
+		List<String> result2 = tasksList.stream().filter(task::isValid).map(t ->t.getTitle()).sorted().toList();
+		result2.forEach(t->System.out.println(t));
 	}
 }
