@@ -15,4 +15,9 @@ public class Task {
 	public String getPriority() {
 		return this.priority;
 	}
+	
+	@Override
+	public String toString() {
+		return title;
+	}
 }
